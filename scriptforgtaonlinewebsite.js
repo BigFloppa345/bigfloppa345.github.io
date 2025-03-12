@@ -20,7 +20,7 @@ function changeBackgroundColor() {
 
     // Создаем кнопку для изменения цвета фона
     const changeColorButton = document.createElement('button');
-    changeColorButton.textContent = 'Изменить цвет фона';
+    changeColorButton.textContent = 'Change background color';
     changeColorButton.style.position = 'fixed';
     changeColorButton.style.bottom = '60px'; // Поднимаем выше, чтобы освободить место для кнопки сброса
     changeColorButton.style.right = '20px';
@@ -38,7 +38,7 @@ function changeBackgroundColor() {
 
     // Создаем кнопку для сброса фона
     const resetColorButton = document.createElement('button');
-    resetColorButton.textContent = 'Сбросить фон';
+    resetColorButton.textContent = 'Reset background text';
     resetColorButton.style.position = 'fixed';
     resetColorButton.style.bottom = '20px';
     resetColorButton.style.right = '20px';
