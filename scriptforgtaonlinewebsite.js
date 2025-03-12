@@ -38,7 +38,7 @@ function changeBackgroundColor() {
 
     // Создаем кнопку для сброса фона
     const resetColorButton = document.createElement('button');
-    resetColorButton.textContent = 'Reset background text';
+    resetColorButton.textContent = 'Reset background color';
     resetColorButton.style.position = 'fixed';
     resetColorButton.style.bottom = '20px';
     resetColorButton.style.right = '20px';
