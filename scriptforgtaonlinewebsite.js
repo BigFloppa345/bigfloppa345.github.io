@@ -1,4 +1,3 @@
-// Функция для добавления анимации при наведении на изображения
 function addHoverEffect() {
     const images = document.querySelectorAll('img');
     images.forEach(img => {
@@ -13,16 +12,14 @@ function addHoverEffect() {
     });
 }
 
-// Функция для изменения цвета фона при клике на кнопку
 function changeBackgroundColor() {
     const colors = ['#3498db', '#e74c3c', '#2ecc71', '#9b59b6', '#f1c40f'];
     let currentIndex = 0;
 
-    // Создаем кнопку для изменения цвета фона
     const changeColorButton = document.createElement('button');
     changeColorButton.textContent = 'Change background color';
     changeColorButton.style.position = 'fixed';
-    changeColorButton.style.bottom = '60px'; // Поднимаем выше, чтобы освободить место для кнопки сброса
+    changeColorButton.style.bottom = '60px';
     changeColorButton.style.right = '20px';
     changeColorButton.style.padding = '10px 20px';
     changeColorButton.style.backgroundColor = '#34495e';
@@ -36,7 +33,6 @@ function changeBackgroundColor() {
         currentIndex = (currentIndex + 1) % colors.length;
     });
 
-    // Создаем кнопку для сброса фона
     const resetColorButton = document.createElement('button');
     resetColorButton.textContent = 'Reset background color';
     resetColorButton.style.position = 'fixed';
@@ -50,15 +46,13 @@ function changeBackgroundColor() {
     resetColorButton.style.cursor = 'pointer';
 
     resetColorButton.addEventListener('click', () => {
-        document.body.style.backgroundColor = '#ffffff'; // Возвращаем белый цвет фона
+        document.body.style.backgroundColor = '#ffffff';
     });
 
-    // Добавляем кнопки на страницу
     document.body.appendChild(changeColorButton);
     document.body.appendChild(resetColorButton);
 }
 
-// Вызов функций после загрузки страницы
 window.onload = function() {
     addHoverEffect();
     changeBackgroundColor();
